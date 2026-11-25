@@ -1,0 +1,367 @@
+{
+ "dvm": {
+  "rows_raw": 13799,
+  "cols_raw": 259,
+  "dup_cols_dropped": 72,
+  "const_cols_dropped": 34,
+  "n_features": 151,
+  "zero_rows_dropped": 209,
+  "zero_rows_by_source": {
+   "Drebin": 196,
+   "Maldroid2020": 10,
+   "CICInvesAndMal2019": 3
+  },
+  "conflict_vectors": 4,
+  "conflict_rows_dropped": 45,
+  "duplicate_rows_collapsed": 8341,
+  "const_cols_after_cleaning": 0,
+  "identical_cols_dropped": 0,
+  "identical_col_aliases": {},
+  "rows_clean": 5204,
+  "malware": 1744,
+  "benign": 3460,
+  "scenarios": {
+   "S1": {
+    "train": 3739,
+    "test": 1465
+   },
+   "S2": {
+    "train": 3506,
+    "test": 1698
+   },
+   "S3": {
+    "train": 2286,
+    "test": 2918
+   },
+   "S4": {
+    "train": 2694,
+    "test": 2510
+   }
+  },
+  "input_sha256": {
+   "dvm Drebin.csv": "fd6a635cb6cb7d93e37372e06a00db87c9145d66c4bab7be4a7d36c2ea69836b",
+   "dvm Genome.csv": "eff887e11861d2b580a56f19c9bf9557c8aac3bdb9f93928ba0c7c275cc5a001",
+   "dvm CICInvesAndMal2019.csv": "a2fcd3bf56f41bd3029636916e5cc4c54a12c5aa6cc178ba4ad9fbcbf624bd53",
+   "dvm Maldroid2020.csv": "ae5aa5821b7c72232fd77a77e523276255f473971c5b0ee051e00ae80ae3123f",
+   "dvm Omer.csv": "e90956d8ac8cd967759b410810a0489826bf3fef4a8abc34ee964202b9627501",
+   "dvm.csv": "a172e757b1e75debd3f7129978299f86b6c029812471af1f0cd14e6724d006ec"
+  },
+  "output_sha256": "6e90ba30ab82ab514a91e31ef57ca954217d6904fc42ddc98a65f260a93eb653"
+ },
+ "jvm": {
+  "rows_raw": 13799,
+  "cols_raw": 206,
+  "dup_cols_dropped": 0,
+  "const_cols_dropped": 3,
+  "n_features": 109,
+  "zero_rows_dropped": 203,
+  "zero_rows_by_source": {
+   "Drebin": 190,
+   "Maldroid2020": 10,
+   "CICInvesAndMal2019": 3
+  },
+  "conflict_vectors": 93,
+  "conflict_rows_dropped": 5179,
+  "duplicate_rows_collapsed": 4990,
+  "const_cols_after_cleaning": 0,
+  "identical_cols_dropped": 92,
+  "identical_col_aliases": {
+   "aload_0": [
+    "aload_1",
+    "aload_2",
+    "aload_3",
+    "astore_0",
+    "astore_2",
+    "astore_3",
+    "baload",
+    "bastore",
+    "caload",
+    "castore",
+    "daload",
+    "dastore",
+    "dconst_0",
+    "dconst_1",
+    "dload_0",
+    "dload_1",
+    "dload_2",
+    "dload_3",
+    "dstore_0",
+    "dstore_1",
+    "dstore_2",
+    "dstore_3",
+    "faload",
+    "fastore",
+    "fconst_0",
+    "fconst_1",
+    "fconst_2",
+    "fload_0",
+    "fload_1",
+    "fload_2",
+    "fload_3",
+    "fstore_0",
+    "fstore_1",
+    "fstore_2",
+    "fstore_3",
+    "iconst_m1",
+    "iconst_0",
+    "iconst_1",
+    "iconst_2",
+    "iconst_3",
+    "iconst_4",
+    "iload_0",
+    "iload_1",
+    "iload_2",
+    "iload_3",
+    "ireturn",
+    "istore_0",
+    "istore_1",
+    "istore_2",
+    "istore_3",
+    "iushr",
+    "laload",
+    "lconst_0",
+    "lconst_1",
+    "lload_0",
+    "lload_1",
+    "lload_2",
+    "lload_3",
+    "lstore_0",
+    "lstore_1",
+    "lstore_2",
+    "lstore_3",
+    "saload"
+   ],
+   "bipush": [
+    "dcmpg",
+    "dcmpl",
+    "fcmpg",
+    "fcmpl",
+    "iconst_5",
+    "ldc_w",
+    "ldc2_w",
+    "sipush"
+   ],
+   "aconst_null": [
+    "dup_x1",
+    "dup_x2",
+    "dup2_x1",
+    "dup2_x2"
+   ],
+   "if_acmpeq": [
+    "if_acmpne",
+    "if_icmpeq",
+    "if_icmpge",
+    "if_icmpgt",
+    "if_icmple",
+    "if_icmplt",
+    "if_icmpne"
+   ],
+   "checkcast": [
+    "ifnonnull",
+    "monitorexit",
+    "putstatic"
+   ],
+   "impdep1": [
+    "impdep2"
+   ],
+   "anewarray": [
+    "invokeinterface",
+    "invokestatic",
+    "lookupswitch",
+    "multianewarray"
+   ],
+   "ifgt": [
+    "invokespecial",
+    "invokevirtual"
+   ]
+  },
+  "rows_clean": 3427,
+  "malware": 412,
+  "benign": 3015,
+  "scenarios": {
+   "S1": {
+    "train": 2653,
+    "test": 774
+   },
+   "S2": {
+    "train": 2300,
+    "test": 1127
+   },
+   "S3": {
+    "train": 1003,
+    "test": 2424
+   },
+   "S4": {
+    "train": 1757,
+    "test": 1670
+   }
+  },
+  "input_sha256": {
+   "jvm Drebin.csv": "18467714758fdf41a28b9b1f72509d4ff716ef618801a726768f52d98c863f54",
+   "jvm Genome.csv": "12b4ccf6ff1d37019c98d0a9214abc8bae1630727dd7cedac664e02d902f075e",
+   "jvm CICInvesAndMal2019.csv": "a383f6f4257a3d951d7f7698f7594a43a78b61a242c6ee7b7238cd74baedc3cd",
+   "jvm Maldroid2020.csv": "bc11ef85cbbfa62c108e3acfd303c0cf7d34ba6e25df93602eeb01b22ed119a5",
+   "jvm Omer.csv": "2d07bab8209662ad64f14236586043a09bdd01ae712006153369605ebada4bc9",
+   "jvm.csv": "092ce8d96d390cdf46dcbd76ca385895353e8467a866f784b56b78f070f1d88b"
+  },
+  "output_sha256": "4c36e0d70f13975b5f0084b5b2a2f3f9a5bcaa69650538cfe64330e1bf4d74d9"
+ },
+ "hybrid": {
+  "rows_raw": 13799,
+  "cols_raw": 463,
+  "dup_cols_dropped": 72,
+  "const_cols_dropped": 37,
+  "n_features": 260,
+  "zero_rows_dropped": 203,
+  "zero_rows_by_source": {
+   "Drebin": 190,
+   "Maldroid2020": 10,
+   "CICInvesAndMal2019": 3
+  },
+  "conflict_vectors": 3,
+  "conflict_rows_dropped": 21,
+  "duplicate_rows_collapsed": 6810,
+  "const_cols_after_cleaning": 0,
+  "identical_cols_dropped": 92,
+  "identical_col_aliases": {
+   "aload_0": [
+    "aload_1",
+    "aload_2",
+    "aload_3",
+    "astore_0",
+    "astore_2",
+    "astore_3",
+    "baload",
+    "bastore",
+    "caload",
+    "castore",
+    "daload",
+    "dastore",
+    "dconst_0",
+    "dconst_1",
+    "dload_0",
+    "dload_1",
+    "dload_2",
+    "dload_3",
+    "dstore_0",
+    "dstore_1",
+    "dstore_2",
+    "dstore_3",
+    "faload",
+    "fastore",
+    "fconst_0",
+    "fconst_1",
+    "fconst_2",
+    "fload_0",
+    "fload_1",
+    "fload_2",
+    "fload_3",
+    "fstore_0",
+    "fstore_1",
+    "fstore_2",
+    "fstore_3",
+    "iconst_m1",
+    "iconst_0",
+    "iconst_1",
+    "iconst_2",
+    "iconst_3",
+    "iconst_4",
+    "iload_0",
+    "iload_1",
+    "iload_2",
+    "iload_3",
+    "ireturn",
+    "istore_0",
+    "istore_1",
+    "istore_2",
+    "istore_3",
+    "iushr",
+    "laload",
+    "lconst_0",
+    "lconst_1",
+    "lload_0",
+    "lload_1",
+    "lload_2",
+    "lload_3",
+    "lstore_0",
+    "lstore_1",
+    "lstore_2",
+    "lstore_3",
+    "saload"
+   ],
+   "bipush": [
+    "dcmpg",
+    "dcmpl",
+    "fcmpg",
+    "fcmpl",
+    "iconst_5",
+    "ldc_w",
+    "ldc2_w",
+    "sipush"
+   ],
+   "aconst_null": [
+    "dup_x1",
+    "dup_x2",
+    "dup2_x1",
+    "dup2_x2"
+   ],
+   "if_acmpeq": [
+    "if_acmpne",
+    "if_icmpeq",
+    "if_icmpge",
+    "if_icmpgt",
+    "if_icmple",
+    "if_icmplt",
+    "if_icmpne"
+   ],
+   "checkcast": [
+    "ifnonnull",
+    "monitorexit",
+    "putstatic"
+   ],
+   "impdep1": [
+    "impdep2"
+   ],
+   "anewarray": [
+    "invokeinterface",
+    "invokestatic",
+    "lookupswitch",
+    "multianewarray"
+   ],
+   "ifgt": [
+    "invokespecial",
+    "invokevirtual"
+   ]
+  },
+  "rows_clean": 6765,
+  "malware": 1843,
+  "benign": 4922,
+  "scenarios": {
+   "S1": {
+    "train": 5128,
+    "test": 1637
+   },
+   "S2": {
+    "train": 4784,
+    "test": 1981
+   },
+   "S3": {
+    "train": 2710,
+    "test": 4055
+   },
+   "S4": {
+    "train": 3734,
+    "test": 3031
+   }
+  },
+  "input_sha256": {
+   "hybrid Drebin.csv": "5d331d7f5dc10f170bfd7ac991e473cbc0db921717ee619d3d76402ecba0df22",
+   "hybrid Genome.csv": "084a24a2ff8b2c1a67540cec27ae1296c9cc4f88939fb0d3fb498c60b870b18e",
+   "hybrid CICInvesAndMal2019.csv": "31369a77f83eca3eeb0acae3e66ea0acb4abd0175ee21dec039677856d647eeb",
+   "hybrid Maldroid2020.csv": "70a77ed2f1d992d7f35a13ad99b47dcc70b6b35ca58f4ebb865860bda8600573",
+   "hybrid Omer.csv": "e6f61d005780b5672539dd53fee18c9d81fbf410270cfa6f0dbe9c8856dd4e22",
+   "hybrid.csv": "8d9a4fc361a0547a3a0c5218e3ad6783ade0f4360a28722f7352af29822842a9"
+  },
+  "output_sha256": "53b05026553923c004836cc81f21b143a8d668d5cdb09cfbe687456d860726ee"
+ }
+}

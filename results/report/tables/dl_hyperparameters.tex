@@ -1,0 +1,15 @@
+\begin{table} [h!]
+	\centering
+	\caption{Architecture of the DL baselines. Training for all models: Adam (lr 0.001), binary cross-entropy, batch 128, at most 100 epochs, early stopping (patience 10) on a 10\% stratified validation split of the training fold}
+	\label{tab:dl_hyperparameters}
+	\scalebox{0.75}{
+		\begin{tabular}{ll}
+			\textbf{Model} & \textbf{Architecture} \\
+			\hline
+			DL-MLP & dense 128-64, ReLU, dropout 0.2 \\
+			CNN1D & conv1d 32 (k=5), max-pool 2, conv1d 64 (k=5), global max-pool, dropout 0.2 \\
+			BiLSTM & feature tokens (d=16), BiLSTM 32 units per direction, mean pooling, dropout 0.2 \\
+			PatchTransformer & patches of 8 features as tokens (d=64), [CLS], 2 encoder layers, 4 heads
+		\end{tabular}
+	}
+\end{table}

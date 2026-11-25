@@ -1,0 +1,33 @@
+\begin{table} [h!]
+	\centering
+	\caption{Optimization results of the original ABC, AMDABC, and AMDABC components on the Android malware detection datasets}
+	\label{tab:result_opt_ablation}
+	\scalebox{0.8}{
+	\begin{tblr}{
+			cells = {c},
+			row{1} = {font=\bfseries},
+			row{2} = {font=\bfseries},
+			cell{1}{1} = {r=2}{},
+			cell{1}{2} = {c=2}{},
+			cell{1}{4} = {c=2}{},
+			cell{1}{6} = {c=2}{},
+			cell{3}{2} = {font=\bfseries},
+			cell{3}{3} = {font=\bfseries},
+			cell{3}{4} = {font=\bfseries},
+			cell{3}{5} = {font=\bfseries},
+			cell{3}{6} = {font=\bfseries},
+			cell{3}{7} = {font=\bfseries},
+			vline{2,4,6} = {-}{dashed},
+			hline{2} = {2-7}{dashed},
+			hline{3} = {1-7}{},
+		}
+		Algorithm & DVM & & JVM & & Hybrid &  \\
+		& Mean & Std. & Mean & Std. & Mean & Std. \\
+		AMDABC & 8.13E-02 & 3.72E-03 & 1.39E-01 & 1.57E-02 & 7.30E-02 & 3.55E-03 \\
+		ABC & 1.04E-01 & 3.35E-03 & 1.98E-01 & 1.18E-02 & 9.43E-02 & 3.33E-03 \\
+		AMDABC1 & 1.04E-01 & 3.59E-03 & 1.99E-01 & 1.02E-02 & 9.53E-02 & 3.45E-03 \\
+		AMDABC2 & 8.21E-02 & 3.17E-03 & 1.41E-01 & 1.30E-02 & 7.34E-02 & 3.36E-03 \\
+		AMDABC3 & 1.03E-01 & 3.60E-03 & 1.96E-01 & 1.11E-02 & 9.38E-02 & 3.52E-03
+	\end{tblr}
+	}
+\end{table}

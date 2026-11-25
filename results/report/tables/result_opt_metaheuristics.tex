@@ -1,0 +1,35 @@
+\begin{table} [h!]
+	\centering
+	\caption{Optimization results of the metaheuristics on the Android malware detection datasets}
+	\label{tab:result_opt_metaheuristics}
+	\scalebox{0.8}{
+	\begin{tblr}{
+			cells = {c},
+			row{1} = {font=\bfseries},
+			row{2} = {font=\bfseries},
+			cell{1}{1} = {r=2}{},
+			cell{1}{2} = {c=2}{},
+			cell{1}{4} = {c=2}{},
+			cell{1}{6} = {c=2}{},
+			cell{3}{2} = {font=\bfseries},
+			cell{3}{3} = {font=\bfseries},
+			cell{3}{4} = {font=\bfseries},
+			cell{3}{5} = {font=\bfseries},
+			cell{3}{6} = {font=\bfseries},
+			cell{3}{7} = {font=\bfseries},
+			vline{2,4,6} = {-}{dashed},
+			hline{2} = {2-7}{dashed},
+			hline{3} = {1-7}{},
+		}
+		Algorithm & DVM & & JVM & & Hybrid &  \\
+		& Mean & Std. & Mean & Std. & Mean & Std. \\
+		AMDABC & 8.13E-02 & 3.72E-03 & 1.39E-01 & 1.57E-02 & 7.30E-02 & 3.55E-03 \\
+		ABC & 1.04E-01 & 3.35E-03 & 1.98E-01 & 1.18E-02 & 9.43E-02 & 3.33E-03 \\
+		MPA & 8.49E-02 & 4.33E-03 & 1.42E-01 & 2.24E-02 & 7.63E-02 & 3.82E-03 \\
+		SSO & 9.33E-02 & 4.00E-03 & 1.72E-01 & 1.05E-02 & 8.48E-02 & 3.39E-03 \\
+		HHO & 1.01E-01 & 5.29E-03 & 1.91E-01 & 1.83E-02 & 8.87E-02 & 4.98E-03 \\
+		GTO & 9.27E-02 & 5.06E-03 & 1.69E-01 & 2.01E-02 & 8.18E-02 & 4.94E-03 \\
+		PSO & 8.84E-02 & 4.10E-03 & 1.64E-01 & 1.12E-02 & 8.07E-02 & 4.12E-03
+	\end{tblr}
+	}
+\end{table}

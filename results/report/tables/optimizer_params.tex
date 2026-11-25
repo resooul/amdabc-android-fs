@@ -1,0 +1,26 @@
+\begin{table} [h!]
+	\centering
+	\caption{The specific parameter settings of the optimization algorithms (every run stops after 500 fitness evaluations; 30 runs per outer fold)}
+	\label{tab:optimizer_params}
+	\scalebox{0.9}{
+		\begin{tabular}{ll}
+			\textbf{Algorithm} & \textbf{Parameter Settings} \\
+			\hline
+			AMDABC & colony: 10, SN: 5, L: 25, n\_best: 3 \\
+			AMDABC1 & colony: 10, SN: 5, L: 25, n\_best: 3 \\
+			AMDABC2 & colony: 10, SN: 5, L: 25, n\_best: 3 \\
+			AMDABC3 & colony: 10, SN: 5, L: 25, n\_best: 3 \\
+			ABC & colony: 10, SN: 5, L: 25 \\
+			GBABC & colony: 10, SN: 5, L: 25 \\
+			GBC & colony: 10, SN: 5, L: 25 \\
+			ABCX & colony: 10, SN: 5, L: SN x D (= 5 x D) \\
+			DABC & colony: 10, SN: 5, L: 25 \\
+			ABCVSS & colony: 10, SN: 10, L: 25 \\
+			PSO & pop: 10, c1: 2.05, c2: 2.05, w: 0.4 \\
+			SSO & pop: 10 \\
+			HHO & pop: 7 \\
+			GTO & pop: 5, p1: 0.03, p2: 0.8, beta: 3.0 \\
+			MPA & pop: 5, FADS: 0.2, P: 0.5
+		\end{tabular}
+	}
+\end{table}

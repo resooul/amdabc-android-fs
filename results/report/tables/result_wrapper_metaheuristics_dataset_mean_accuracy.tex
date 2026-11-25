@@ -1,0 +1,41 @@
+\begin{table} [h!]
+	\centering
+	\caption{Predictive performance of Android malware detection: Baseline vs. metaheuristic wrapper feature selection}
+	\label{tab:result_wrapper_metaheuristics_dataset_mean_accuracy}
+	\scalebox{0.80}{
+	\begin{tblr}{
+			cells = {c},
+			cell{2}{1} = {r=8}{},
+			cell{10}{1} = {r=8}{},
+			cell{18}{1} = {r=8}{},
+			hline{2} = {-}{},
+			hline{10,18} = {-}{dashed},
+		}
+		\textbf{Dataset} & \textbf{FS Method} & \textbf{ACC(\%)} & \textbf{AUC(\%)} & \textbf{PRE(\%)} & \textbf{REC(\%)} & \textbf{F1(\%)} & \textbf{FS} \\
+		DVM & - & 95.79 & 98.92 & 95.88 & 95.79 & 95.81 & 151 \\
+		 & ABC & 94.60 & 98.41 & 94.78 & 94.60 & 94.64 & 47 \\
+		 & MPA & 94.57 & 98.35 & 94.70 & 94.57 & 94.60 & 35 \\
+		 & SSO & 94.80 & 98.36 & 94.90 & 94.80 & 94.83 & 39 \\
+		 & HHO & 94.49 & 98.37 & 94.65 & 94.49 & 94.52 & 42 \\
+		 & GTO & 94.51 & 98.34 & 94.66 & 94.51 & 94.54 & 37 \\
+		 & PSO & 94.93 & 98.46 & 95.05 & 94.93 & 94.96 & 40 \\
+		 & AMDABC & \textbf{94.61} & \textbf{98.30} & \textbf{94.74} & \textbf{94.61} & \textbf{94.64} & \textbf{31} \\
+		JVM & - & 94.40 & 97.41 & 94.21 & 94.40 & 94.01 & 109 \\
+		 & ABC & 94.38 & 97.37 & 94.21 & 94.38 & 94.03 & 48 \\
+		 & MPA & 94.39 & 97.25 & 94.21 & 94.39 & 94.04 & 34 \\
+		 & SSO & 94.36 & 97.18 & 94.18 & 94.36 & 94.03 & 42 \\
+		 & HHO & 94.25 & 97.24 & 94.07 & 94.25 & 93.89 & 46 \\
+		 & GTO & 94.37 & 97.31 & 94.18 & 94.37 & 94.00 & 40 \\
+		 & PSO & 94.24 & 97.19 & 94.06 & 94.24 & 93.85 & 45 \\
+		 & AMDABC & \textbf{94.20} & \textbf{97.27} & \textbf{94.04} & \textbf{94.20} & \textbf{93.83} & \textbf{42} \\
+		Hybrid & - & 96.71 & 99.29 & 96.77 & 96.71 & 96.72 & 260 \\
+		 & ABC & 95.90 & 98.95 & 96.00 & 95.90 & 95.92 & 46 \\
+		 & MPA & 95.87 & 98.90 & 95.97 & 95.87 & 95.90 & 39 \\
+		 & SSO & 95.96 & 98.95 & 96.06 & 95.96 & 95.99 & 44 \\
+		 & HHO & 95.79 & 98.88 & 95.87 & 95.79 & 95.81 & 44 \\
+		 & GTO & 95.79 & 98.91 & 95.88 & 95.79 & 95.81 & 41 \\
+		 & PSO & 95.77 & 98.87 & 95.86 & 95.77 & 95.80 & 38 \\
+		 & AMDABC & \textbf{95.95} & \textbf{98.89} & \textbf{96.03} & \textbf{95.95} & \textbf{95.97} & \textbf{33}
+	\end{tblr}
+	}
+\end{table}

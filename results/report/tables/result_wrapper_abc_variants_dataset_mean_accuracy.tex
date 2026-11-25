@@ -1,0 +1,41 @@
+\begin{table} [h!]
+	\centering
+	\caption{Predictive performance of Android malware detection: Baseline vs. ABC-variant wrapper feature selection}
+	\label{tab:result_wrapper_abcvariants_dataset_mean_accuracy}
+	\scalebox{0.80}{
+	\begin{tblr}{
+			cells = {c},
+			cell{2}{1} = {r=8}{},
+			cell{10}{1} = {r=8}{},
+			cell{18}{1} = {r=8}{},
+			hline{2} = {-}{},
+			hline{10,18} = {-}{dashed},
+		}
+		\textbf{Dataset} & \textbf{FS Method} & \textbf{ACC(\%)} & \textbf{AUC(\%)} & \textbf{PRE(\%)} & \textbf{REC(\%)} & \textbf{F1(\%)} & \textbf{FS} \\
+		DVM & - & 95.79 & 98.92 & 95.88 & 95.79 & 95.81 & 151 \\
+		 & ABC & 94.60 & 98.41 & 94.78 & 94.60 & 94.64 & 47 \\
+		 & ABCVSS & 94.51 & 98.32 & 94.66 & 94.51 & 94.55 & 45 \\
+		 & ABCX & 94.80 & 98.47 & 94.93 & 94.80 & 94.83 & 41 \\
+		 & DABC & 94.34 & 98.28 & 94.45 & 94.34 & 94.37 & 48 \\
+		 & GBABC & 94.79 & 98.46 & 94.93 & 94.79 & 94.82 & 49 \\
+		 & GBC & 94.78 & 98.41 & 94.93 & 94.78 & 94.82 & 45 \\
+		 & AMDABC & \textbf{94.61} & \textbf{98.30} & \textbf{94.74} & \textbf{94.61} & \textbf{94.64} & \textbf{31} \\
+		JVM & - & 94.40 & 97.41 & 94.21 & 94.40 & 94.01 & 109 \\
+		 & ABC & 94.38 & 97.37 & 94.21 & 94.38 & 94.03 & 48 \\
+		 & ABCVSS & 94.43 & 97.31 & 94.25 & 94.43 & 94.08 & 48 \\
+		 & ABCX & 94.46 & 97.15 & 94.27 & 94.46 & 94.12 & 40 \\
+		 & DABC & 94.41 & 97.39 & 94.24 & 94.41 & 94.04 & 47 \\
+		 & GBABC & 94.39 & 97.27 & 94.19 & 94.39 & 94.02 & 45 \\
+		 & GBC & 94.46 & 97.12 & 94.25 & 94.46 & 94.09 & 40 \\
+		 & AMDABC & \textbf{94.20} & \textbf{97.27} & \textbf{94.04} & \textbf{94.20} & \textbf{93.83} & \textbf{42} \\
+		Hybrid & - & 96.71 & 99.29 & 96.77 & 96.71 & 96.72 & 260 \\
+		 & ABC & 95.90 & 98.95 & 96.00 & 95.90 & 95.92 & 46 \\
+		 & ABCVSS & 95.80 & 98.91 & 95.87 & 95.80 & 95.82 & 47 \\
+		 & ABCX & 95.84 & 98.92 & 95.94 & 95.84 & 95.87 & 44 \\
+		 & DABC & 95.84 & 98.92 & 95.92 & 95.84 & 95.86 & 47 \\
+		 & GBABC & 95.86 & 98.93 & 95.95 & 95.86 & 95.88 & 45 \\
+		 & GBC & 95.93 & 98.92 & 96.03 & 95.93 & 95.96 & 46 \\
+		 & AMDABC & \textbf{95.95} & \textbf{98.89} & \textbf{96.03} & \textbf{95.95} & \textbf{95.97} & \textbf{33}
+	\end{tblr}
+	}
+\end{table}

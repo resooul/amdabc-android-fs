@@ -1,0 +1,29 @@
+\begin{table} [h!]
+	\centering
+	\caption{Results of the ML models on the original and filtered Android malware detection datasets}
+	\label{tab:result_filter_dataset_mean_accuracy}
+	\scalebox{0.8}{
+	\begin{tblr}{
+			cells = {c},
+			cell{2}{1} = {r=4}{},
+			cell{6}{1} = {r=4}{},
+			cell{10}{1} = {r=4}{},
+			hline{2} = {-}{},
+			hline{6,10} = {-}{dashed},
+		}
+		\textbf{\textbf{Dataset}} & \textbf{Filter} & \textbf{ACC(\%)} & \textbf{AUC(\%)} & \textbf{PRE(\%)} & \textbf{REC(\%)} & \textbf{F1(\%)} \\
+		DVM & - & 95.79 & 98.92 & 95.88 & 95.79 & 95.81 \\
+		 & FScore & 94.92 & 98.62 & 95.04 & 94.92 & 94.95 \\
+		 & Chi2 & 95.23 & 98.79 & 95.34 & 95.23 & 95.26 \\
+		 & Pearson & 94.92 & 98.62 & 95.04 & 94.92 & 94.95 \\
+		JVM & - & 94.40 & 97.41 & 94.21 & 94.40 & 94.01 \\
+		 & FScore & 94.43 & 97.31 & 94.23 & 94.43 & 94.04 \\
+		 & Chi2 & 94.33 & 97.37 & 94.14 & 94.33 & 93.92 \\
+		 & Pearson & 94.43 & 97.31 & 94.23 & 94.43 & 94.04 \\
+		Hybrid & - & 96.71 & 99.29 & 96.77 & 96.71 & 96.72 \\
+		 & FScore & 96.18 & 99.04 & 96.26 & 96.18 & 96.20 \\
+		 & Chi2 & 96.09 & 99.01 & 96.19 & 96.09 & 96.12 \\
+		 & Pearson & 96.18 & 99.04 & 96.26 & 96.18 & 96.20
+	\end{tblr}
+	}
+\end{table}

@@ -1,0 +1,38 @@
+\begin{table} [h!]
+	\centering
+	\caption{Statistical results of the ABC variants on the Android malware detection datasets}
+	\label{tab:result_opt_statistics_abcvariants}
+	\scalebox{0.8}{
+	\begin{tblr}{
+			cells = {c},
+			row{1} = {font=\bfseries},
+			row{2} = {font=\bfseries},
+			cell{1}{1} = {r=2}{},
+			cell{1}{2} = {c=2}{},
+			cell{1}{4} = {c=2}{},
+			cell{1}{6} = {c=2}{},
+			cell{1}{8} = {c=2}{},
+			cell{3}{2} = {font=\bfseries},
+			cell{3}{3} = {font=\bfseries},
+			cell{3}{4} = {font=\bfseries},
+			cell{3}{5} = {font=\bfseries},
+			cell{3}{6} = {font=\bfseries},
+			cell{3}{7} = {font=\bfseries},
+			cell{3}{8} = {font=\bfseries},
+			cell{3}{9} = {font=\bfseries},
+			vline{2,4,6,8} = {-}{dashed},
+			hline{2} = {2-9}{dashed},
+			hline{3} = {-}{},
+		}
+		Algorithm & DVM &  & JVM &  & Hybrid & & Total &  \\
+		& $p-$Value & Rank & $p-$Value & Rank & $p-$Value & Rank & Score & Rank \\
+		AMDABC & - & 1.01 & - & 1.02 & - & 1.00 & 1.01 & 1 \\
+		ABC & 1.38E-25 & 5.59 & 1.38E-25 & 5.46 & 1.38E-25 & 5.49 & 5.51 & 5 \\
+		GBABC & 1.38E-25 & 4.11 & 1.38E-25 & 4.21 & 1.38E-25 & 4.28 & 4.20 & 4 \\
+		GBC & 1.38E-25 & 3.43 & 1.38E-25 & 3.65 & 1.38E-25 & 3.31 & 3.46 & 3 \\
+		ABCX & 1.38E-25 & 2.13 & 1.38E-25 & 2.35 & 1.38E-25 & 2.19 & 2.22 & 2 \\
+		DABC & 1.38E-25 & 5.60 & 1.38E-25 & 5.39 & 1.38E-25 & 5.56 & 5.52 & 6 \\
+		ABCVSS & 1.38E-25 & 6.15 & 1.38E-25 & 5.93 & 1.38E-25 & 6.17 & 6.08 & 7
+	\end{tblr}
+	}
+\end{table}

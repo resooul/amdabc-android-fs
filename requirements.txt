@@ -1,0 +1,13 @@
+# Python 3.11. mealpy is NOT required: the parts used are vendored in src/amdabc_fs/optim/mealpy_core.
+catboost==1.2.10
+matplotlib==3.11.2
+numpy==1.26.0
+pandas==3.0.6
+psutil
+PyYAML==6.0.4
+scikit-learn==1.9.1
+scipy==1.16.3
+seaborn==0.13.2
+torch==2.14.1        # the paper run used the CUDA 12.6 build (2.14.1+cu126), see README
+xgboost==3.2.0
+pytest==9.2.0

@@ -1,0 +1,24 @@
+\begin{table} [h!]
+	\centering
+	\caption{Rows and columns at each data-preparation step}
+	\label{tab:dataset_cleaning}
+	\scalebox{0.9}{
+		\begin{tabular}{lrrr}
+			\textbf{Step} & \textbf{DVM} & \textbf{JVM} & \textbf{Hybrid} \\
+			\hline
+			Rows (processed tables) & 13,799 & 13,799 & 13,799 \\
+			Empty vectors removed & 209 & 203 & 203 \\
+			Label-conflicting rows removed & 45 & 5,179 & 21 \\
+			Duplicate rows collapsed & 8,341 & 4,990 & 6,810 \\
+			Unique rows used & 5,204 & 3,427 & 6,765 \\
+			  malware & 1,744 & 412 & 1,843 \\
+			  benign & 3,460 & 3,015 & 4,922 \\
+			Columns (incl. identifier and class) & 259 & 206 & 463 \\
+			Copied columns (.1) removed & 72 & 0 & 72 \\
+			Constant columns removed & 34 & 3 & 37 \\
+			Constant after row cleaning & 0 & 0 & 0 \\
+			Identical columns removed & 0 & 92 & 92 \\
+			Features used & 151 & 109 & 260
+		\end{tabular}
+	}
+\end{table}

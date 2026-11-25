@@ -1,0 +1,5 @@
+Model,Architecture
+DL-MLP,"dense 128-64, ReLU, dropout 0.2"
+CNN1D,"conv1d 32 (k=5), max-pool 2, conv1d 64 (k=5), global max-pool, dropout 0.2"
+BiLSTM,"feature tokens (d=16), BiLSTM 32 units per direction, mean pooling, dropout 0.2"
+PatchTransformer,"patches of 8 features as tokens (d=64), [CLS], 2 encoder layers, 4 heads"

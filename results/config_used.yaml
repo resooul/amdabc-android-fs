@@ -1,0 +1,140 @@
+consensus:
+  rule: zscore
+  sigma: 0.0
+data_dir: data/raw
+dl:
+  batch_size: 128
+  device: auto
+  epochs: 100
+  lr: 0.001
+  patience: 10
+  val_fraction: 0.1
+figures:
+  dpi: 300
+  format: png
+filters:
+  k: 100
+  methods:
+  - fscore
+  - chi2
+  - pearson
+  wrapper_filter: fscore
+fitness:
+  classifier: lr
+  inner_folds: 5
+  inner_seed: 42
+  metric: balanced_accuracy
+  weight: 0.9
+groups:
+  abc_variants:
+  - AMDABC
+  - ABC
+  - GBABC
+  - GBC
+  - ABCX
+  - DABC
+  - ABCVSS
+  ablation:
+  - AMDABC
+  - ABC
+  - AMDABC1
+  - AMDABC2
+  - AMDABC3
+  metaheuristics:
+  - AMDABC
+  - ABC
+  - SSO
+  - HHO
+  - GTO
+  - PSO
+  - MPA
+models:
+  dl:
+  - DL-MLP
+  - CNN1D
+  - BiLSTM
+  - PatchTransformer
+  dl_eval_algorithms:
+  - AMDABC
+  ml:
+  - XGB
+  - LR
+  - GBM
+  - RF
+  - CAT
+  - LDA
+  - MLP
+  wrapper_table_models: ml
+optimization:
+  algorithms:
+  - AMDABC
+  - AMDABC1
+  - AMDABC2
+  - AMDABC3
+  - ABC
+  - GBABC
+  - GBC
+  - ABCX
+  - DABC
+  - ABCVSS
+  - PSO
+  - SSO
+  - HHO
+  - GTO
+  - MPA
+  fe_per_iteration: 10
+  max_fe: 500
+  seeds: 30
+representations:
+- dvm
+- jvm
+- hybrid
+results_dir: results
+scenarios:
+  definitions:
+    S1:
+      test_benign:
+      - Omer
+      train_benign:
+      - CICInvesAndMal2019
+      - Maldroid2020
+    S2:
+      test_benign:
+      - CICInvesAndMal2019
+      train_benign:
+      - Maldroid2020
+      - Omer
+    S3:
+      test_benign:
+      - Maldroid2020
+      train_benign:
+      - CICInvesAndMal2019
+      - Omer
+    S4:
+      test_benign:
+      - CICInvesAndMal2019
+      - Omer
+      train_benign:
+      - Maldroid2020
+  malware_test_fraction: 0.3
+  names:
+  - S1
+  - S2
+  - S3
+  - S4
+  seeds: 10
+sources:
+  benign:
+  - CICInvesAndMal2019
+  - Maldroid2020
+  - Omer
+  malware:
+  - Drebin
+  - Genome
+split:
+  n_folds: 5
+  seed: 42
+stats:
+  alpha: 0.05
+  bootstrap: 2000
+  seed: 42

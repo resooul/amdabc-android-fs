@@ -1,0 +1,37 @@
+{
+ "time": "2026-11-24T19:41:36",
+ "hostname": "DESKTOP-V2K7C3U",
+ "os": "Windows 10 (10.0.19045)",
+ "machine": "AMD64",
+ "cpu": "12th Gen Intel(R) Core(TM) i9-12900K",
+ "logical_cores": 24,
+ "physical_cores": null,
+ "ram_gb": 63.7,
+ "gpu": {
+  "torch_cuda_available": true,
+  "torch_cuda_version": "12.6",
+  "devices": [
+   {
+    "name": "NVIDIA GeForce RTX 3080 Ti",
+    "memory_gb": 12.0
+   }
+  ],
+  "nvidia_smi": [
+   "NVIDIA GeForce RTX 3080 Ti, 12288 MiB, 610.88"
+  ]
+ },
+ "python": "3.11.18",
+ "packages": {
+  "numpy": "1.26.0",
+  "pandas": "3.0.6",
+  "scipy": "1.16.3",
+  "scikit-learn": "1.9.1",
+  "xgboost": "3.2.0",
+  "catboost": "1.2.10",
+  "torch": "2.14.1+cu126",
+  "matplotlib": "3.11.2",
+  "seaborn": "0.13.2",
+  "PyYAML": "6.0.4"
+ },
+ "mealpy": "vendored subset of 3.0.3 (src/amdabc_fs/optim/mealpy_core)"
+}

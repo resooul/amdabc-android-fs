@@ -1,0 +1,42 @@
+\begin{table}[htbp]
+\centering\small
+\caption{Training and inference cost with all features and with the AMDABC subset (mean over outer folds; inference in microseconds per sample).}\label{tab:efficiency}
+\begin{tabular}{lrrrrrr}
+\hline
+Dataset & Model & Features & Fit (s) full & Fit (s) AMDABC & Infer full & Infer AMDABC \\ \hline
+DVM & BiLSTM & 151/31 & 36.9286 & 23.3602 & 59.14 & 15.06 \\
+DVM & CAT & 151/31 & 0.3530 & 0.2282 & 1.79 & 1.29 \\
+DVM & CNN1D & 151/31 & 28.8555 & 17.6254 & 45.24 & 30.64 \\
+DVM & DL-MLP & 151/31 & 9.4853 & 10.6250 & 29.04 & 19.96 \\
+DVM & GBM & 151/31 & 0.4557 & 0.1061 & 2.91 & 0.99 \\
+DVM & LDA & 151/31 & 0.0479 & 0.0124 & 1.03 & 0.62 \\
+DVM & LR & 151/31 & 0.1696 & 0.0161 & 2.04 & 0.87 \\
+DVM & MLP & 151/31 & 3.1273 & 1.0848 & 0.91 & 1.11 \\
+DVM & PatchTransformer & 151/31 & 39.8661 & 21.0620 & 98.52 & 47.23 \\
+DVM & RF & 151/31 & 0.0387 & 0.0272 & 1.72 & 1.66 \\
+DVM & XGB & 151/31 & 0.6721 & 0.4325 & 3.50 & 1.53 \\
+Hybrid & BiLSTM & 260/33 & 93.3961 & 24.5961 & 76.28 & 10.16 \\
+Hybrid & CAT & 260/33 & 0.2351 & 0.0905 & 1.34 & 1.02 \\
+Hybrid & CNN1D & 260/33 & 42.1828 & 19.7248 & 63.38 & 12.56 \\
+Hybrid & DL-MLP & 260/33 & 6.9604 & 9.4880 & 6.66 & 4.72 \\
+Hybrid & GBM & 260/33 & 0.6139 & 0.1845 & 1.94 & 1.13 \\
+Hybrid & LDA & 260/33 & 0.0723 & 0.0144 & 0.62 & 0.51 \\
+Hybrid & LR & 260/33 & 0.0959 & 0.0186 & 1.40 & 0.78 \\
+Hybrid & MLP & 260/33 & 4.5942 & 1.6412 & 1.15 & 0.90 \\
+Hybrid & PatchTransformer & 260/33 & 60.4774 & 23.5234 & 105.22 & 12.14 \\
+Hybrid & RF & 260/33 & 0.0340 & 0.0318 & 1.26 & 1.53 \\
+Hybrid & XGB & 260/33 & 0.1604 & 0.0554 & 2.99 & 1.43 \\
+JVM & BiLSTM & 109/42 & 24.8153 & 12.2544 & 6.19 & 17.84 \\
+JVM & CAT & 109/42 & 0.1184 & 0.0857 & 1.39 & 1.58 \\
+JVM & CNN1D & 109/42 & 20.8458 & 12.1629 & 34.89 & 16.04 \\
+JVM & DL-MLP & 109/42 & 3.5242 & 4.7496 & 4.49 & 51.80 \\
+JVM & GBM & 109/42 & 0.1465 & 0.1035 & 1.47 & 1.66 \\
+JVM & LDA & 109/42 & 0.0207 & 0.0115 & 0.81 & 0.94 \\
+JVM & LR & 109/42 & 0.0098 & 0.0080 & 0.96 & 1.36 \\
+JVM & MLP & 109/42 & 0.8334 & 0.8238 & 0.94 & 0.99 \\
+JVM & PatchTransformer & 109/42 & 23.5607 & 10.1159 & 63.62 & 79.35 \\
+JVM & RF & 109/42 & 0.0204 & 0.0253 & 1.95 & 3.04 \\
+JVM & XGB & 109/42 & 0.0396 & 0.0591 & 1.97 & 2.01 \\
+\hline
+\end{tabular}
+\end{table}

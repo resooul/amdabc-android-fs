@@ -1,0 +1,73 @@
+# Full protocol (paper run). Every path is relative to the repository root.
+data_dir: data/raw            # per-source CSVs: "{rep} {source}.csv" (see data/README.md)
+results_dir: results
+
+representations: [dvm, jvm, hybrid]
+sources:
+  malware: [Drebin, Genome]                    # Genome is a subset of Drebin; merged as one malware source
+  benign: [CICInvesAndMal2019, Maldroid2020, Omer]
+
+split:
+  n_folds: 5
+  seed: 42
+
+filters:
+  methods: [fscore, chi2, pearson]   # base-learner filter comparison (paper Fig. filter)
+  k: 100                             # top-k features, fitted on the outer training fold only
+  wrapper_filter: fscore             # filter applied before the wrapper (paper: FScore)
+
+fitness:
+  metric: balanced_accuracy          # accuracy | balanced_accuracy
+  weight: 0.9                        # 0.9 * (1 - metric) + 0.1 * selected / candidates
+  inner_folds: 5
+  inner_seed: 42
+  classifier: lr                     # LogisticRegression(C=1, solver=liblinear)
+
+optimization:
+  max_fe: 500
+  seeds: 30                          # seeds 0..29, identical for every optimizer
+  algorithms: [AMDABC, AMDABC1, AMDABC2, AMDABC3, ABC, GBABC, GBC, ABCX, DABC, ABCVSS,
+               PSO, SSO, HHO, GTO, MPA]
+  fe_per_iteration: 10               # plotting only: one "iteration" on the x axis = 10 FE
+
+groups:                              # order = order in the paper's tables and figures
+  ablation: [AMDABC, ABC, AMDABC1, AMDABC2, AMDABC3]
+  abc_variants: [AMDABC, ABC, GBABC, GBC, ABCX, DABC, ABCVSS]
+  metaheuristics: [AMDABC, ABC, SSO, HHO, GTO, PSO, MPA]
+
+consensus:
+  rule: zscore                       # keep features with frequency >= mean frequency
+  sigma: 0.0
+
+models:
+  ml: [XGB, LR, GBM, RF, CAT, LDA, MLP]
+  dl: [DL-MLP, CNN1D, BiLSTM, PatchTransformer]   # FTTransformer also available (slow on CPU)
+  wrapper_table_models: ml           # tables 13-14 average over these (paper: the 7 ML models)
+  dl_eval_algorithms: [AMDABC]       # DL models on these subsets only ("all" = every optimizer)
+
+dl:
+  epochs: 100
+  patience: 10
+  batch_size: 128
+  lr: 0.001
+  val_fraction: 0.1
+  device: auto                       # auto | cpu | cuda
+
+scenarios:
+  names: [S1, S2, S3, S4]
+  seeds: 10
+  malware_test_fraction: 0.3
+  definitions:
+    S1: {train_benign: [CICInvesAndMal2019, Maldroid2020], test_benign: [Omer]}
+    S2: {train_benign: [Maldroid2020, Omer], test_benign: [CICInvesAndMal2019]}
+    S3: {train_benign: [CICInvesAndMal2019, Omer], test_benign: [Maldroid2020]}
+    S4: {train_benign: [Maldroid2020], test_benign: [CICInvesAndMal2019, Omer]}
+
+stats:
+  alpha: 0.05
+  bootstrap: 2000
+  seed: 42
+
+figures:
+  dpi: 300
+  format: png

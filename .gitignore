@@ -1,0 +1,10 @@
+# caches and temporary files
+__pycache__/
+.pytest_cache/
+catboost_info/
+*.tmp
+*.started
+# local scratch runs (the paper run in results/ is versioned)
+results_smoke/
+results_*/
+config/_*.yaml

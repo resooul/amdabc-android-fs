@@ -1,0 +1,18 @@
+\begin{table} [h!]
+	\centering
+	\caption{Hyperparameter settings of the ML algorithms}
+	\label{tab:ml_hyperparameters}
+	\scalebox{0.75}{
+		\begin{tabular}{ll}
+			\textbf{Model} & \textbf{Hyperparameters} \\
+			\hline
+			CAT & depth: 5, iterations: 20, learning\_rate: 0.1 \\
+			GBM & max\_depth: 5, n\_estimators: 20 \\
+			LDA & solver: lsqr, shrinkage: auto \\
+			LR & C: 1.0, solver: liblinear \\
+			MLP & hidden\_layer\_sizes: (10, 20, 10), activation: relu, solver: adam, max\_iter: 100 \\
+			RF & max\_depth: 5, n\_estimators: 10, criterion: gini \\
+			XGB & tree\_method: hist, max\_depth: 5, n\_estimators: 20, learning\_rate: 0.1
+		\end{tabular}
+	}
+\end{table}

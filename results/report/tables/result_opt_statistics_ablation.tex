@@ -1,0 +1,36 @@
+\begin{table} [h!]
+	\centering
+	\caption{Statistical results of the original ABC, AMDABC, and AMDABC components on the Android malware detection datasets}
+	\label{tab:result_opt_statistics_ablation}
+	\scalebox{0.8}{
+	\begin{tblr}{
+			cells = {c},
+			row{1} = {font=\bfseries},
+			row{2} = {font=\bfseries},
+			cell{1}{1} = {r=2}{},
+			cell{1}{2} = {c=2}{},
+			cell{1}{4} = {c=2}{},
+			cell{1}{6} = {c=2}{},
+			cell{1}{8} = {c=2}{},
+			cell{3}{2} = {font=\bfseries},
+			cell{3}{3} = {font=\bfseries},
+			cell{3}{4} = {font=\bfseries},
+			cell{3}{5} = {font=\bfseries},
+			cell{3}{6} = {font=\bfseries},
+			cell{3}{7} = {font=\bfseries},
+			cell{3}{8} = {font=\bfseries},
+			cell{3}{9} = {font=\bfseries},
+			vline{2,4,6,8} = {-}{dashed},
+			hline{2} = {2-9}{dashed},
+			hline{3} = {-}{},
+		}
+		Algorithm & DVM &  & JVM &  & Hybrid & & Total &  \\
+		& $p-$Value & Rank & $p-$Value & Rank & $p-$Value & Rank & Score & Rank \\
+		AMDABC & - & 1.44 & - & 1.43 & - & 1.43 & 1.43 & 1 \\
+		ABC & 9.20E-26 & 3.92 & 9.20E-26 & 4.05 & 9.20E-26 & 3.89 & 3.95 & 4 \\
+		AMDABC1 & 9.20E-26 & 4.34 & 9.20E-26 & 4.27 & 9.20E-26 & 4.49 & 4.37 & 5 \\
+		AMDABC2 & 9.65E-03 & 1.56 & 6.31E-02 & 1.57 & 3.30E-01 & 1.57 & 1.57 & 2 \\
+		AMDABC3 & 9.20E-26 & 3.74 & 9.20E-26 & 3.68 & 9.20E-26 & 3.62 & 3.68 & 3
+	\end{tblr}
+	}
+\end{table}

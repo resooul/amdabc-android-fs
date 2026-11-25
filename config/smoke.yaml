@@ -1,0 +1,21 @@
+# Quick end-to-end check. Same code paths, small numbers.
+inherit: default.yaml
+results_dir: results_smoke
+
+split:
+  n_folds: 2
+
+optimization:
+  max_fe: 30
+  seeds: 2
+  fe_per_iteration: 3
+
+dl:
+  epochs: 1
+  patience: 1
+
+scenarios:
+  seeds: 2
+
+stats:
+  bootstrap: 200

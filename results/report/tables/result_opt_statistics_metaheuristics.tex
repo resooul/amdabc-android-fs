@@ -1,0 +1,38 @@
+\begin{table} [h!]
+	\centering
+	\caption{Statistical results of the metaheuristics on the Android malware detection datasets}
+	\label{tab:result_opt_statistics_metaheuristics}
+	\scalebox{0.8}{
+	\begin{tblr}{
+			cells = {c},
+			row{1} = {font=\bfseries},
+			row{2} = {font=\bfseries},
+			cell{1}{1} = {r=2}{},
+			cell{1}{2} = {c=2}{},
+			cell{1}{4} = {c=2}{},
+			cell{1}{6} = {c=2}{},
+			cell{1}{8} = {c=2}{},
+			cell{3}{2} = {font=\bfseries},
+			cell{3}{3} = {font=\bfseries},
+			cell{3}{4} = {font=\bfseries},
+			cell{3}{5} = {font=\bfseries},
+			cell{3}{6} = {font=\bfseries},
+			cell{3}{7} = {font=\bfseries},
+			cell{3}{8} = {font=\bfseries},
+			cell{3}{9} = {font=\bfseries},
+			vline{2,4,6,8} = {-}{dashed},
+			hline{2} = {2-9}{dashed},
+			hline{3} = {-}{},
+		}
+		Algorithm & DVM &  & JVM &  & Hybrid & & Total &  \\
+		& $p-$Value & Rank & $p-$Value & Rank & $p-$Value & Rank & Score & Rank \\
+		AMDABC & - & 1.39 & - & 1.74 & - & 1.38 & 1.50 & 1 \\
+		ABC & 1.38E-25 & 6.71 & 1.38E-25 & 6.54 & 1.38E-25 & 6.83 & 6.69 & 7 \\
+		MPA & 1.11E-11 & 2.20 & 1.41E-01 & 2.06 & 6.90E-13 & 2.13 & 2.13 & 2 \\
+		SSO & 1.38E-25 & 4.44 & 6.78E-24 & 4.19 & 1.38E-25 & 4.72 & 4.45 & 5 \\
+		HHO & 1.38E-25 & 5.96 & 2.02E-25 & 5.89 & 1.38E-25 & 5.67 & 5.84 & 6 \\
+		GTO & 2.48E-25 & 4.21 & 9.61E-22 & 4.16 & 1.41E-24 & 3.89 & 4.09 & 4 \\
+		PSO & 2.68E-23 & 3.09 & 7.38E-23 & 3.42 & 7.51E-25 & 3.39 & 3.30 & 3
+	\end{tblr}
+	}
+\end{table}
