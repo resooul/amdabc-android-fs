@@ -476,12 +476,12 @@
 concurrent.futures.process._RemoteTraceback: 
 """
 Traceback (most recent call last):
-  File "C:\Users\Tubitak\.conda\envs\amdabc\Lib\concurrent\futures\process.py", line 261, in _process_worker
+  File "<conda-env>\Lib\concurrent\futures\process.py", line 261, in _process_worker
     r = call_item.fn(*call_item.args, **call_item.kwargs)
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\DropBox\Dropbox\DoktoraOgrencisiCalismalari\ResulOzdemir_DoktoraCalismalari\Android-FS\V2\amdabc-android-fs\src\amdabc_fs\tasks.py", line 45, in _call
+  File "<repo>\src\amdabc_fs\tasks.py", line 45, in _call
     m.unlink(missing_ok=True)
-  File "C:\Users\Tubitak\.conda\envs\amdabc\Lib\pathlib.py", line 1147, in unlink
+  File "<conda-env>\Lib\pathlib.py", line 1147, in unlink
     os.unlink(self)
 PermissionError: [WinError 32] Dosya başka bir işlem tarafından kullanıldığından bu işlem dosyaya erişemiyor: 'results\\base\\hybrid\\full\\MLP\\fold1.json.started'
 """
@@ -489,13 +489,13 @@ PermissionError: [WinError 32] Dosya başka bir işlem tarafından kullanıldı�
 The above exception was the direct cause of the following exception:
 
 Traceback (most recent call last):
-  File "D:\DropBox\Dropbox\DoktoraOgrencisiCalismalari\ResulOzdemir_DoktoraCalismalari\Android-FS\V2\amdabc-android-fs\src\amdabc_fs\tasks.py", line 88, in run_tasks
+  File "<repo>\src\amdabc_fs\tasks.py", line 88, in run_tasks
     _, dt = fut.result()
             ^^^^^^^^^^^^
-  File "C:\Users\Tubitak\.conda\envs\amdabc\Lib\concurrent\futures\_base.py", line 449, in result
+  File "<conda-env>\Lib\concurrent\futures\_base.py", line 449, in result
     return self.__get_result()
            ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Tubitak\.conda\envs\amdabc\Lib\concurrent\futures\_base.py", line 401, in __get_result
+  File "<conda-env>\Lib\concurrent\futures\_base.py", line 401, in __get_result
     raise self._exception
 PermissionError: [Errno 13] Dosya başka bir işlem tarafından kullanıldığından bu işlem dosyaya erişemiyor: 'results\\base\\hybrid\\full\\MLP\\fold1.json.started'
 
@@ -3114,12 +3114,12 @@ PermissionError: [Errno 13] Dosya başka bir işlem tarafından kullanıldığı
 concurrent.futures.process._RemoteTraceback: 
 """
 Traceback (most recent call last):
-  File "C:\Users\Tubitak\.conda\envs\amdabc\Lib\concurrent\futures\process.py", line 261, in _process_worker
+  File "<conda-env>\Lib\concurrent\futures\process.py", line 261, in _process_worker
     r = call_item.fn(*call_item.args, **call_item.kwargs)
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\DropBox\Dropbox\DoktoraOgrencisiCalismalari\ResulOzdemir_DoktoraCalismalari\Android-FS\V2\amdabc-android-fs\src\amdabc_fs\tasks.py", line 45, in _call
+  File "<repo>\src\amdabc_fs\tasks.py", line 45, in _call
     m.unlink(missing_ok=True)
-  File "C:\Users\Tubitak\.conda\envs\amdabc\Lib\pathlib.py", line 1147, in unlink
+  File "<conda-env>\Lib\pathlib.py", line 1147, in unlink
     os.unlink(self)
 PermissionError: [WinError 32] Dosya başka bir işlem tarafından kullanıldığından bu işlem dosyaya erişemiyor: 'results\\opt\\hybrid\\fold1\\AMDABC1\\seed10.npz.started'
 """
@@ -3127,13 +3127,13 @@ PermissionError: [WinError 32] Dosya başka bir işlem tarafından kullanıldı�
 The above exception was the direct cause of the following exception:
 
 Traceback (most recent call last):
-  File "D:\DropBox\Dropbox\DoktoraOgrencisiCalismalari\ResulOzdemir_DoktoraCalismalari\Android-FS\V2\amdabc-android-fs\src\amdabc_fs\tasks.py", line 88, in run_tasks
+  File "<repo>\src\amdabc_fs\tasks.py", line 88, in run_tasks
     _, dt = fut.result()
             ^^^^^^^^^^^^
-  File "C:\Users\Tubitak\.conda\envs\amdabc\Lib\concurrent\futures\_base.py", line 449, in result
+  File "<conda-env>\Lib\concurrent\futures\_base.py", line 449, in result
     return self.__get_result()
            ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Tubitak\.conda\envs\amdabc\Lib\concurrent\futures\_base.py", line 401, in __get_result
+  File "<conda-env>\Lib\concurrent\futures\_base.py", line 401, in __get_result
     raise self._exception
 PermissionError: [Errno 13] Dosya başka bir işlem tarafından kullanıldığından bu işlem dosyaya erişemiyor: 'results\\opt\\hybrid\\fold1\\AMDABC1\\seed10.npz.started'
 
@@ -3300,12 +3300,12 @@ PermissionError: [Errno 13] Dosya başka bir işlem tarafından kullanıldığı
 concurrent.futures.process._RemoteTraceback: 
 """
 Traceback (most recent call last):
-  File "C:\Users\Tubitak\.conda\envs\amdabc\Lib\concurrent\futures\process.py", line 261, in _process_worker
+  File "<conda-env>\Lib\concurrent\futures\process.py", line 261, in _process_worker
     r = call_item.fn(*call_item.args, **call_item.kwargs)
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\DropBox\Dropbox\DoktoraOgrencisiCalismalari\ResulOzdemir_DoktoraCalismalari\Android-FS\V2\amdabc-android-fs\src\amdabc_fs\tasks.py", line 45, in _call
+  File "<repo>\src\amdabc_fs\tasks.py", line 45, in _call
     m.unlink(missing_ok=True)
-  File "C:\Users\Tubitak\.conda\envs\amdabc\Lib\pathlib.py", line 1147, in unlink
+  File "<conda-env>\Lib\pathlib.py", line 1147, in unlink
     os.unlink(self)
 PermissionError: [WinError 32] Dosya başka bir işlem tarafından kullanıldığından bu işlem dosyaya erişemiyor: 'results\\opt\\jvm\\fold0\\SSO\\seed11.npz.started'
 """
@@ -3313,13 +3313,13 @@ PermissionError: [WinError 32] Dosya başka bir işlem tarafından kullanıldı�
 The above exception was the direct cause of the following exception:
 
 Traceback (most recent call last):
-  File "D:\DropBox\Dropbox\DoktoraOgrencisiCalismalari\ResulOzdemir_DoktoraCalismalari\Android-FS\V2\amdabc-android-fs\src\amdabc_fs\tasks.py", line 88, in run_tasks
+  File "<repo>\src\amdabc_fs\tasks.py", line 88, in run_tasks
     _, dt = fut.result()
             ^^^^^^^^^^^^
-  File "C:\Users\Tubitak\.conda\envs\amdabc\Lib\concurrent\futures\_base.py", line 449, in result
+  File "<conda-env>\Lib\concurrent\futures\_base.py", line 449, in result
     return self.__get_result()
            ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Tubitak\.conda\envs\amdabc\Lib\concurrent\futures\_base.py", line 401, in __get_result
+  File "<conda-env>\Lib\concurrent\futures\_base.py", line 401, in __get_result
     raise self._exception
 PermissionError: [Errno 13] Dosya başka bir işlem tarafından kullanıldığından bu işlem dosyaya erişemiyor: 'results\\opt\\jvm\\fold0\\SSO\\seed11.npz.started'
 

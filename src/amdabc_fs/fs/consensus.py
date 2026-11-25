@@ -1,6 +1,6 @@
 """Z-score consensus over the runs of one (representation, fold, optimizer).
 
-Archived rule (4-FS-Evaluate-FS, verified against all 36 stored subsets):
+Rule:
 freq_j = share of runs selecting feature j; keep j if
 freq_j >= mean(freq) + sigma * std(freq), with sigma = 0.
 """

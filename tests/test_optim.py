@@ -48,7 +48,7 @@ def test_budget_raises_after_limit():
         p.obj_func(np.ones(D))
 
 
-def _changed_after_restart(legacy):
+def _changed_after_restart():
     """Constant objective: nothing improves, so only restart/scouts move agents."""
     changed = []
 
@@ -61,7 +61,7 @@ def _changed_after_restart(legacy):
                 changed.append(sum(not np.array_equal(b, a.solution) for b, a in zip(before, self.pop)))
 
     p = BudgetedProblem(D, lambda m: 0.5, 400)
-    m = Probe(epoch=1000, pop_size=10, n_limits=3, legacy_restart=legacy)
+    m = Probe(epoch=1000, pop_size=10, n_limits=3)
     p.arm()
     try:
         m.solve(p, seed=1)
@@ -71,10 +71,8 @@ def _changed_after_restart(legacy):
 
 
 def test_restart_regenerates_whole_population():
-    n_fixed, ns = _changed_after_restart(legacy=False)
-    n_legacy, _ = _changed_after_restart(legacy=True)
-    assert n_fixed == ns          # every food source replaced
-    assert n_legacy <= 2          # archived bug: best slot (+ at most one scout)
+    n_changed, ns = _changed_after_restart()
+    assert n_changed == ns        # every food source replaced
 
 
 def test_alpha_follows_fe_progress():

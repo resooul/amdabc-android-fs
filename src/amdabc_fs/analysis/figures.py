@@ -1,4 +1,4 @@
-"""Figures, reproducing the archived notebooks' plotting code (sizes, styles,
+"""Figures, using the plotting settings of the paper (sizes, styles,
 labels, legends, file names and savefig arguments).
 
 Sources: 5-FS-OPT-Results*.ipynb (convergence, boxplots, alpha) and

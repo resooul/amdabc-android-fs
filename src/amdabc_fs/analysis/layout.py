@@ -1,4 +1,4 @@
-"""Paper-specific names and orders (taken from the manuscript and the archived notebooks)."""
+"""Paper-specific names and orders."""
 
 REP_LABEL = {"dvm": "DVM", "jvm": "JVM", "hybrid": "Hybrid"}
 FILTER_LABEL = {"full": "-", "fscore": "FScore", "chi2": "Chi2", "pearson": "Pearson"}

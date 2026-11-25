@@ -1,6 +1,6 @@
 """The 7 ML classifiers with the paper's fixed hyperparameters (Table ml_hyperparameters).
 
-Values come from the archived ML-Run-2 notebook; no grid search.
+The values are fixed; they are not tuned on the evaluation data.
 """
 from __future__ import annotations
 

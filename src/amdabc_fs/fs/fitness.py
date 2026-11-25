@@ -1,4 +1,4 @@
-"""Wrapper fitness, as in the archived FSProblem.
+"""Wrapper fitness used by all optimizers.
 
 fitness(mask) = w * (1 - CV score) + (1 - w) * |mask| / D, lower is better;
 empty mask -> 1.0. CV: StratifiedKFold(5, shuffle=True, random_state=42) on the

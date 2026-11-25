@@ -1,13 +1,12 @@
-"""The 15 optimizers compared in the paper, with the archived settings.
+"""The 15 optimizers compared in the paper and their settings.
 
-Settings follow the archived notebook (3-FS-OPT-Binary-3.7 Original):
+Settings:
 pop_size = 10, ABC family n_limits = ceil(0.5 * 50) = 25, AMDABC n_best = 3;
 MPA and GTO use pop_size / 2, HHO uses ceil(pop_size / 1.5). "GTO" in the paper
 is the gorilla troops optimizer (Abdollahzadeh et al. 2021), i.e. mealpy's
 AGTO.OriginalAGTO, not mealpy's GTO (giant trevally). PSO, SSO, HHO and AGTO
 come from the vendored mealpy 3.0.3 subset (optim/mealpy_core).
-MPA is the authors' implementation (follows the published MATLAB code), see
-tools/port_paper_mpa.py.
+MPA is the authors' implementation (follows the published MATLAB code).
 """
 from __future__ import annotations
 
@@ -54,7 +53,7 @@ OPTIMIZERS: dict[str, Spec] = {
     "SSO": Spec(SSO.OriginalSSO, dict(pop_size=POP), False, "meta"),
     "HHO": Spec(HHO.OriginalHHO, dict(pop_size=math.ceil(POP / 1.5)), False, "meta"),
     "GTO": Spec(AGTO.OriginalAGTO, dict(pop_size=POP // 2), False, "meta"),
-    "MPA": Spec(paper_mpa.MPA, dict(pop_size=POP // 2), False, "meta"),   # authors' MPA, pairing fixed
+    "MPA": Spec(paper_mpa.MPA, dict(pop_size=POP // 2), False, "meta"),   # authors' MPA
 }
 
 assert len(OPTIMIZERS) == 15

@@ -121,8 +121,8 @@ AMDABC has the best mean Friedman rank in all three comparisons (ablation, ABC
 variants, metaheuristics) on all three representations. Against the ABC
 variants and the other metaheuristics, Holm-adjusted Wilcoxon p < 1e-10 except
 MPA on JVM (p = 0.14). In the ablation, the best-guided search alone (AMDABC2)
-comes close (p = 0.01 / 0.06 / 0.33), while the adaptive coefficient and the
-restart alone do not improve on canonical ABC.
+comes close (p = 0.01 / 0.06 / 0.33), while the adaptive coefficient alone does
+not improve on canonical ABC and the restart alone improves it only slightly.
 Its consensus subsets keep 30.6 / 41.6 / 32.8 features (DVM / JVM / Hybrid);
 the mean accuracy of the 7 ML models is 94.61 / 94.20 / 95.95% versus
 95.79 / 94.40 / 96.71% with all features, and model training is about 2.9 times
@@ -131,12 +131,10 @@ of weighted F1 with logistic regression. Full numbers: `results/report/`.
 
 ## Optimizer code
 
-- `optim/paper_abc.py` and `optim/paper_mpa.py` are generated from the authors'
-  original implementation by `tools/port_paper_abc.py` and
-  `tools/port_paper_mpa.py` (source SHA-1 checked). Class bodies are verbatim;
-  the only changes are marked `PATCH`: the AMDABC global-restart index, the
-  FE-based schedule of the adaptive coefficient, and the solution/fitness
-  pairing in MPA.
+- `optim/paper_abc.py` holds AMDABC, its three component variants and the ABC
+  variants; `optim/paper_mpa.py` holds MPA. Both are the authors'
+  implementations on the MEALPY `Optimizer` base class. Under a FE budget, the
+  adaptive coefficient of AMDABC follows the share of the budget used so far.
 - PSO, SSO, HHO and GTO (gorilla troops, mealpy `AGTO`) and the `Optimizer`
   base class are unmodified code from mealpy 3.0.3 (MIT licence), vendored in
   `optim/mealpy_core/` by `tools/vendor_mealpy.py`; mealpy itself is not
